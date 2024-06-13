@@ -5,7 +5,6 @@
 Qingji Dong, 
 Kai Chen, 
 Rongxiang Zhang, 
-Xing Mei, 
 Lean Fu, 
 [Fei Wang](http://www.aiar.xjtu.edu.cn/info/1046/1242.htm)<br/>
 
