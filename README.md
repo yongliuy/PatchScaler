@@ -43,8 +43,8 @@ This project is released under the [Apache 2.0 license](./LICENSE). Redistributi
 If you find this project useful for your research, please use the following BibTeX entry.
 ```
 @inproceedings{liu2024patchscaler,
-  title={PatchScaler: An Efficient Patch-independent Diffusion Model for Super-Resolution},
-  author={Yong Liu, Hang Dong, Jinshan Pan, Qingji Dong, Kai Chen, Rongxiang Zhang, Xing Mei, Lean Fu, and Fei Wang},
+  title={PatchScaler: An Efficient Patch-independent Diffusion Model for Image Super-Resolution},
+  author={Yong Liu, Hang Dong, Jinshan Pan, Qingji Dong, Kai Chen, Rongxiang Zhang, Lean Fu, and Fei Wang},
   year={2024}
 }
 ```
