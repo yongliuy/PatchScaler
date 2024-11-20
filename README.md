@@ -14,29 +14,30 @@ Lean Fu,
 <img alt="GitHub" src="https://img.shields.io/badge/license-Apache_2.0-brightgreen">
 [![GitHub Stars](https://img.shields.io/github/stars/yongliuy/PatchScaler?style=social)](https://github.com/yongliuy/PatchScaler/)
 
->Diffusion models significantly improve the quality of super-resolved images with their impressive content generation capabilities. However, the huge computational costs limit the applications of these methods.
-Recent efforts have explored reasonable inference acceleration to reduce the number of sampling steps, but the computational cost remains high as each step is performed on the entire image. 
-This paper introduces PatchScaler, a patch-independent diffusion-based single image super-resolution (SR) method, designed to enhance the efficiency of the inference process.
-The proposed method is motivated by the observation that not all the image patches within an image need the same sampling steps for reconstructing high-resolution images. 
-Based on this observation, we thus develop a Patch-adaptive Group Sampling (PGS) to divide feature patches into different groups according to the patch-level reconstruction difficulty and dynamically assign an appropriate sampling configuration for each group so that the inference speed can be better accelerated. 
-In addition, to improve the denoising ability at each step of the sampling, we develop a texture prompt to guide the estimations of the diffusion model by retrieving high-quality texture priors from a patch-independent reference texture memory. 
-Experiments show that our PatchScaler achieves favorable performance in both quantitative and qualitative evaluations with fast inference speed. 
+>While diffusion models significantly improve the perceptual quality of super-resolved images, they usually require a large number of sampling steps, resulting in high computational costs and long inference times. 
+Recent efforts have explored reasonable acceleration schemes by reducing the number of sampling steps. 
+However, these approaches treat all regions of the image equally, overlooking the fact that regions with varying levels of reconstruction difficulty require different sampling steps. 
+To address this limitation, we propose PatchScaler, an efficient patch-independent diffusion pipeline for single image super-resolution. 
+Specifically, PatchScaler introduces a Patch-adaptive Group Sampling (PGS) strategy that groups feature patches by quantifying their reconstruction difficulty and establishes shortcut paths with different sampling configurations for each group. 
+To further optimize the patch-level reconstruction process of PGS, we propose a texture prompt that provides rich texture conditional information to the diffusion model. 
+The texture prompt adaptively retrieves texture priors for the target patch from a common reference texture memory. 
+Extensive experiments show that our PatchScaler achieves superior performance in both quantitative and qualitative evaluations, while significantly speeding up inference. 
 <p align="center">
 <img src=assets/method.png width="1000px"/>
 </p>
 
 ## Update
+- **2024.11.20**: Update lastest results.
 - **2024.05.27**: Create this repository.
 
-## Coming soon...
-- [ ] New project website
-- [ ] The training scripts
-- [ ] Releasing pretrained models
-- [ ] The inference scripts
 
 ## License
 This project is released under the [Apache 2.0 license](./LICENSE). Redistribution and use should follow this license.
 
+## Results on Real-world Image SR
+<p align="center">
+<img src=assets/results.png width="1000px"/>
+</p>
 
 ## BibTeX
 If you find this project useful for your research, please use the following BibTeX entry.
