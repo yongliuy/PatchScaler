@@ -1,4 +1,4 @@
-# PatchScaler: An Efficient Patch-independent Diffusion Model for Super-Resolution
+# PatchScaler: An Efficient Patch-independent Diffusion Model for Image Super-Resolution
 [Yong Liu](https://scholar.google.com/citations?user=DT0LPIEAAAAJ&hl=en&oi=sra), 
 [Hang Dong](https://scholar.google.com/citations?user=4DKepr8AAAAJ&hl=en&oi=sra), 
 [Jinshan Pan](https://jspan.github.io/), 
