@@ -26,20 +26,20 @@ Extensive experiments show that our PatchScaler achieves superior performance in
 <img src=assets/method.png width="1000px"/>
 </p>
 
-## Update
+## :snowboarder: Update
 - **2024.11.20**: Update lastest results.
 - **2024.05.27**: Create this repository.
 
 
-## License
+## :whale: License
 This project is released under the [Apache 2.0 license](./LICENSE). Redistribution and use should follow this license.
 
-## Results on Real-world Image SR
+## :trophy: Results on Real-world Image SR
 <p align="center">
 <img src=assets/results.png width="1000px"/>
 </p>
 
-## BibTeX
+## :star: BibTeX
 If you find this project useful for your research, please use the following BibTeX entry.
 ```
 @inproceedings{liu2024patchscaler,
